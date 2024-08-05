@@ -42,14 +42,13 @@ const MeetingTypeList = () => {
       const call = client.call("default", id);
       if (!call) throw new Error("Failed to create meeting");
 
-      const startsAt =
+      const starts_at =
         values.dateTime.toISOString() || new Date(Date.now()).toISOString();
-      const description = values.description || "Instant Meeting";
       await call.getOrCreate({
         data: {
-          starts_at: startsAt,
+          starts_at,
           custom: {
-            description,
+            description: values.description || "Instant Meeting",
           },
         },
       });
