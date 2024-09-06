@@ -11,7 +11,7 @@ export const useGetCalls = () => {
   useEffect(() => {
     const loadCalls = async () => {
       if (!client || !user?.id) return;
-      
+
       setIsLoading(true);
 
       try {
@@ -40,11 +40,13 @@ export const useGetCalls = () => {
 
   const now = new Date();
 
-  const endedCalls = calls?.filter(({ state: { startsAt, endedAt } }: Call) => {
+  const endedCalls = calls?.filter((callData: Call) => {
+    const { state: { startsAt, endedAt } } = callData;
     return (startsAt && new Date(startsAt) < now) || !!endedAt
   })
 
-  const upcomingCalls = calls?.filter(({ state: { startsAt } }: Call) => {
+  const upcomingCalls = calls?.filter((callData: Call) => {
+    const { state: { startsAt } } = callData;
     return startsAt && new Date(startsAt) > now
   })
 
