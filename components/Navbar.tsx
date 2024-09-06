@@ -3,8 +3,6 @@ import Link from "next/link";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import MobileNav from "./MobileNav";
 
-// import MobileNav from "./MobileNav";
-
 const Navbar = () => {
   return (
     <nav className="flex-between fixed z-50 w-full bg-dark-1 px-6 py-3 lg:px-10">

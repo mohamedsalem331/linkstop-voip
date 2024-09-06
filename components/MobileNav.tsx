@@ -46,24 +46,26 @@ const MobileNav = () => {
 
                   return (
                     <SheetClose asChild key={item.route}>
-                      <Link
-                        href={item.route}
-                        key={item.label}
-                        className={cn(
-                          "flex gap-4 items-center p-4 rounded-lg w-full max-w-60",
-                          {
-                            "bg-blue-1": isActive,
-                          }
-                        )}
-                      >
-                        <Image
-                          src={item.imgURL}
-                          alt={item.label}
-                          width={20}
-                          height={20}
-                        />
-                        <p className="font-semibold">{item.label}</p>
-                      </Link>
+                      <button disabled={item.disabled}>
+                        <Link
+                          href={item.route}
+                          key={item.label}
+                          className={cn(
+                            "flex gap-4 items-center p-4 rounded-lg w-full max-w-60",
+                            {
+                              "bg-blue-1": isActive,
+                            }
+                          )}
+                        >
+                          <Image
+                            src={item.imgURL}
+                            alt={item.label}
+                            width={20}
+                            height={20}
+                          />
+                          <p className="font-semibold">{item.label}</p>
+                        </Link>
+                      </button>
                     </SheetClose>
                   );
                 })}
