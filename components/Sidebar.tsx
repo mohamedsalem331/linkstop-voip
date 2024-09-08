@@ -17,28 +17,26 @@ const Sidebar = () => {
             pathname === item.route || pathname.startsWith(`${item.route}/`);
 
           return (
-            <button disabled={item.disabled}>
-              <Link
-                href={item.route}
-                key={item.label}
-                className={cn(
-                  "flex gap-4 items-center p-4 rounded-lg justify-start",
-                  {
-                    "bg-blue-1": isActive,
-                  }
-                )}
-              >
-                <Image
-                  src={item.imgURL}
-                  alt={item.label}
-                  width={24}
-                  height={24}
-                />
-                <p className="text-lg font-semibold max-lg:hidden">
-                  {item.label}
-                </p>
-              </Link>
-            </button>
+            <Link
+              key={item.label}
+              href={item.route}
+              className={cn(
+                "flex gap-4 items-center p-4 rounded-lg justify-start",
+                {
+                  "bg-blue-1": isActive,
+                }
+              )}
+            >
+              <Image
+                src={item.imgURL}
+                alt={item.label}
+                width={24}
+                height={24}
+              />
+              <p className="text-lg font-semibold max-lg:hidden">
+                {item.label}
+              </p>
+            </Link>
           );
         })}
       </div>

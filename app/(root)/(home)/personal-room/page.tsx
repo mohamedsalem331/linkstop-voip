@@ -32,6 +32,7 @@ const PersonalRoom = () => {
   const { user } = useUser();
   const client = useStreamVideoClient();
   const { toast } = useToast();
+  console.log(user);
 
   const meetingId = user?.id;
 
@@ -59,7 +60,10 @@ const PersonalRoom = () => {
     <section className="flex size-full flex-col gap-10 text-white">
       <h1 className="text-xl font-bold lg:text-3xl">Personal Meeting Room</h1>
       <div className="flex w-full flex-col gap-8 xl:max-w-[900px]">
-        <Table title="Topic" description={`${user?.username}'s Meeting Room`} />
+        <Table
+          title="Topic"
+          description={`${user?.username || user?.firstName}'s Meeting Room`}
+        />
         <Table title="Meeting ID" description={meetingId!} />
         <Table title="Invite Link" description={meetingLink} />
       </div>

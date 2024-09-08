@@ -5,13 +5,6 @@ export const navLinks = [
     label: 'Home',
     disabled: false
   },
-
-  {
-    imgURL: '/icons/upcoming.svg',
-    route: '/upcoming',
-    label: 'Upcoming',
-    disabled: false
-  },
   {
     imgURL: '/icons/previous.svg',
     route: '/previous',
