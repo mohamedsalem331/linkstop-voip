@@ -29,4 +29,4 @@ Note: this project is developed solely for providing free video streaming servic
 
 ## License
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/mohamedsalem331/linkstop-voip/blob/main/LICENSE.md).
