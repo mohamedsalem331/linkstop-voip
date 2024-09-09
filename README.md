@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  <img src="./public/icons/logo.png" alt="LinkStop Logo" width="150">
+</h1>
 
-## Getting Started
+**LinkStop** is a simple yet powerful VoIP application clone of zoom, utilizng powerful <a style="color: cyan; font-weight: bold; font-size: 15px" href="https://getstream.io/">Getstream-io</a> video & stream api. that allows users to connect through live meetings, share screens, schedule events, and join personal stream meetings via invitation links—similar to Zoom. The app provides a seamless experience for users to collaborate in real time through video and voice calls.
 
-First, run the development server:
+## Inspiration
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+LinkStop is a lightweight video conferencing and VoIP application built as a similar to platforms like Zoom. I created this project to demonstrate my technical expertise building Dynamic, Interactive and SSR web applications using Nextjs14 while utilizing powerful third-party api providers like getstream-io and clerk.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Note: this project is developed solely for providing free video streaming service and for education purposes. the application is still in development mode.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Live Meetings**: Join or host live meetings with video and voice calls.
+- **Screen Sharing**: Share your screen with other participants in real time.
+- **Scheduled Meetings**: Schedule meetings in advance and receive notifications.
+- **Personal Stream Meetings**: Join personal meetings through unique invitation links.
+- **Voice Rooms**: Create voice rooms for more casual audio interactions.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js14](https://nextjs.org/)
+- [Getsteam-io](https://getstream.io/)
+- [Clerk](https://clerk.com/)
+- [ui-shadcn](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
